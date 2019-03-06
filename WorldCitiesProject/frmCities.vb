@@ -1,15 +1,15 @@
 ﻿Public Class frmCities
 
 
-    ''CountryArray(i,p) i = hold the country placement
+    ''strCountryArray(i,p) i = hold the country placement
     ''p = the data
-    ''Country(i,0) holds line count
-    ''country(i,1)  holds city name
-    ''country(i,2) hold country where city is from
-    ''country(i,3) holds population
-    ''country(i,4) holds countryAnnualRainfall
-    ''Country(i,5) holds Image Name
-    ''Country(i,6+) hold description
+    ''strCountry(i,0) holds line count
+    ''strCountry(i,1) holds city name
+    ''strCountry(i,2) hold country where city is from
+    ''strCountry(i,3) holds population
+    ''strCountry(i,4) holds countryAnnualRainfall
+    ''strCountry(i,5) holds Image Name
+    ''strCountry(i,6+) hold description
     Dim strCitiesFromRussia(4, 120) As String
     Dim strCitiesFromPhilippines(4, 120) As String
     Dim strCitiesFromUK(4, 120) As String
