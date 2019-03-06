@@ -30,16 +30,14 @@ Partial Class frmCities
         Me.radCity3 = New System.Windows.Forms.RadioButton()
         Me.radCity2 = New System.Windows.Forms.RadioButton()
         Me.radCity1 = New System.Windows.Forms.RadioButton()
-        Me.pnlFormatControl = New System.Windows.Forms.Panel()
-        Me.btnItalic = New System.Windows.Forms.Button()
-        Me.btnUnderline = New System.Windows.Forms.Button()
-        Me.btnBold = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.lblDesignedby = New System.Windows.Forms.Label()
         Me.btnRest = New System.Windows.Forms.Button()
+        Me.chkItalic = New System.Windows.Forms.CheckBox()
+        Me.chkBold = New System.Windows.Forms.CheckBox()
+        Me.chkUnderline = New System.Windows.Forms.CheckBox()
         CType(Me.picCities, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlCities.SuspendLayout()
-        Me.pnlFormatControl.SuspendLayout()
         Me.SuspendLayout()
         '
         'picCities
@@ -118,46 +116,6 @@ Partial Class frmCities
         Me.radCity1.Text = "City1"
         Me.radCity1.UseVisualStyleBackColor = True
         '
-        'pnlFormatControl
-        '
-        Me.pnlFormatControl.Controls.Add(Me.btnItalic)
-        Me.pnlFormatControl.Controls.Add(Me.btnUnderline)
-        Me.pnlFormatControl.Controls.Add(Me.btnBold)
-        Me.pnlFormatControl.Location = New System.Drawing.Point(580, 354)
-        Me.pnlFormatControl.Name = "pnlFormatControl"
-        Me.pnlFormatControl.Size = New System.Drawing.Size(133, 140)
-        Me.pnlFormatControl.TabIndex = 4
-        '
-        'btnItalic
-        '
-        Me.btnItalic.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnItalic.Location = New System.Drawing.Point(36, 94)
-        Me.btnItalic.Name = "btnItalic"
-        Me.btnItalic.Size = New System.Drawing.Size(75, 23)
-        Me.btnItalic.TabIndex = 2
-        Me.btnItalic.Text = "Italic"
-        Me.btnItalic.UseVisualStyleBackColor = True
-        '
-        'btnUnderline
-        '
-        Me.btnUnderline.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUnderline.Location = New System.Drawing.Point(36, 65)
-        Me.btnUnderline.Name = "btnUnderline"
-        Me.btnUnderline.Size = New System.Drawing.Size(75, 23)
-        Me.btnUnderline.TabIndex = 1
-        Me.btnUnderline.Text = "Underline"
-        Me.btnUnderline.UseVisualStyleBackColor = True
-        '
-        'btnBold
-        '
-        Me.btnBold.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBold.Location = New System.Drawing.Point(36, 36)
-        Me.btnBold.Name = "btnBold"
-        Me.btnBold.Size = New System.Drawing.Size(75, 23)
-        Me.btnBold.TabIndex = 0
-        Me.btnBold.Text = "Bold"
-        Me.btnBold.UseVisualStyleBackColor = True
-        '
         'btnExit
         '
         Me.btnExit.Location = New System.Drawing.Point(701, 526)
@@ -185,14 +143,49 @@ Partial Class frmCities
         Me.btnRest.Text = "Reset"
         Me.btnRest.UseVisualStyleBackColor = True
         '
+        'chkItalic
+        '
+        Me.chkItalic.AutoSize = True
+        Me.chkItalic.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkItalic.Location = New System.Drawing.Point(580, 378)
+        Me.chkItalic.Name = "chkItalic"
+        Me.chkItalic.Size = New System.Drawing.Size(48, 17)
+        Me.chkItalic.TabIndex = 8
+        Me.chkItalic.Text = "Italic"
+        Me.chkItalic.UseVisualStyleBackColor = True
+        '
+        'chkBold
+        '
+        Me.chkBold.AutoSize = True
+        Me.chkBold.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkBold.Location = New System.Drawing.Point(580, 402)
+        Me.chkBold.Name = "chkBold"
+        Me.chkBold.Size = New System.Drawing.Size(51, 17)
+        Me.chkBold.TabIndex = 9
+        Me.chkBold.Text = "Bold"
+        Me.chkBold.UseVisualStyleBackColor = True
+        '
+        'chkUnderline
+        '
+        Me.chkUnderline.AutoSize = True
+        Me.chkUnderline.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkUnderline.Location = New System.Drawing.Point(580, 426)
+        Me.chkUnderline.Name = "chkUnderline"
+        Me.chkUnderline.Size = New System.Drawing.Size(65, 17)
+        Me.chkUnderline.TabIndex = 10
+        Me.chkUnderline.Text = "Undrline"
+        Me.chkUnderline.UseVisualStyleBackColor = True
+        '
         'frmCities
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.Controls.Add(Me.chkUnderline)
+        Me.Controls.Add(Me.chkBold)
+        Me.Controls.Add(Me.chkItalic)
         Me.Controls.Add(Me.btnRest)
         Me.Controls.Add(Me.lblDesignedby)
         Me.Controls.Add(Me.btnExit)
-        Me.Controls.Add(Me.pnlFormatControl)
         Me.Controls.Add(Me.pnlCities)
         Me.Controls.Add(Me.lstCountries)
         Me.Controls.Add(Me.rtbInformation)
@@ -201,7 +194,6 @@ Partial Class frmCities
         Me.Text = "World Cities"
         CType(Me.picCities, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlCities.ResumeLayout(False)
-        Me.pnlFormatControl.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -211,10 +203,6 @@ Partial Class frmCities
     Friend WithEvents rtbInformation As RichTextBox
     Friend WithEvents lstCountries As ListBox
     Friend WithEvents pnlCities As Panel
-    Friend WithEvents pnlFormatControl As Panel
-    Friend WithEvents btnItalic As Button
-    Friend WithEvents btnUnderline As Button
-    Friend WithEvents btnBold As Button
     Friend WithEvents btnExit As Button
     Friend WithEvents lblDesignedby As Label
     Friend WithEvents radCity4 As RadioButton
@@ -222,4 +210,7 @@ Partial Class frmCities
     Friend WithEvents radCity2 As RadioButton
     Friend WithEvents radCity1 As RadioButton
     Friend WithEvents btnRest As Button
+    Friend WithEvents chkItalic As CheckBox
+    Friend WithEvents chkBold As CheckBox
+    Friend WithEvents chkUnderline As CheckBox
 End Class
