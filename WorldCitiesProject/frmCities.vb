@@ -55,7 +55,7 @@
 
         For Each sFile As String In fileCities
             FileOpen(1, sFile, OpenMode.Input)
-            Input(1, inttempFileLines)
+            inttempFileLines = CInt(LineInput(1))
             strtempCityName = LineInput(1)
             LineInput(1)
             strCountryName = LineInput(1)
