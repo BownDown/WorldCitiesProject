@@ -55,7 +55,7 @@
 
         For Each sFile As String In fileCities
             FileOpen(1, sFile, OpenMode.Input)
-            Input(1, inttempFileLines)
+            inttempFileLines = CInt(LineInput(1))
             strtempCityName = LineInput(1)
             LineInput(1)
             strCountryName = LineInput(1)
@@ -64,6 +64,7 @@
             Select Case strCountryName
 
                 Case "Philippines"
+                Case "Philip"
 
                     strCitiesFromPhilippines(intPhilippinesCountArray, 0) = CStr(inttempFileLines)
                     strCitiesFromPhilippines(intPhilippinesCountArray, 1) = strtempCityName
@@ -120,11 +121,6 @@
 
                 Case "United States"
 
-                    FileOpen(1, sFile, OpenMode.Input)
-                    LineInput(1)
-                    LineInput(1)
-                    LineInput(1)
-                    LineInput(1)
                     strCitiesFromUSA(intUSACountArray, 0) = CStr(inttempFileLines)
                     strCitiesFromUSA(intUSACountArray, 1) = strtempCityName
                     strCitiesFromUSA(intUSACountArray, 2) = strCountryName
