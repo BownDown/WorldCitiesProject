@@ -10,9 +10,9 @@
     ''country(i,4) holds countryAnnualRainfall
     ''Country(i,5) holds Image Name
     ''Country(i,6+) hold description
-    Dim strCitiesFromRussia(,) As String
-    Dim strCitiesFromPhilippines(4, 80) As String
-    Dim strCitiesFromUK(,) As String
+    Dim strCitiesFromRussia(4, 120) As String
+    Dim strCitiesFromPhilippines(4, 120) As String
+    Dim strCitiesFromUK(4, 120) As String
 
     Private Sub frmCities_Load(sender As Object,
                                e As EventArgs) Handles MyBase.Load
