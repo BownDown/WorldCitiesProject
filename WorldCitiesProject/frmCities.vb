@@ -1,4 +1,22 @@
-﻿Public Class frmCities
+﻿'==============================================================================
+'Project:         World Cities Project
+'Title:           World Cities
+'File Name:       
+'Date Completed:  
+'
+'Authors:         Louie Escalera, Linda Lim, Elizabeth Robinson, Neil Wiborg
+'Class:           CS 115 Section C
+'
+'Description:     
+'                 
+'                 
+'                 
+'                 
+'                 
+'==============================================================================
+Option Explicit On
+Option Strict On
+Public Class frmCities
 
 
     ''strCountryArray(i,p) i = hold the country placement
@@ -30,6 +48,13 @@
 
     Private Sub frmCities_Load(sender As Object,
                                e As EventArgs) Handles MyBase.Load
+        '----------------------------------------------------------------------
+        'DESCRIPTION:    DESC
+        '                
+        '                
+        '                
+        '                
+        '----------------------------------------------------------------------
         ''Get files with file extension .wcf from data folder
         Dim fileCities As String() = System.IO.Directory.GetFiles("../Data",
                                                                   "*.wcf")
@@ -69,7 +94,7 @@
                     strCitiesFromPhilippines(intPhilippinesCountArray, 0) = CStr(inttempFileLines)
                     strCitiesFromPhilippines(intPhilippinesCountArray, 1) = strtempCityName
                     strCitiesFromPhilippines(intPhilippinesCountArray, 2) = strCountryName
- 
+
                     strCitiesFromPhilippines(intPhilippinesCountArray, 3) = LineInput(1)
                     strCitiesFromPhilippines(intPhilippinesCountArray, 4) = LineInput(1)
 
@@ -337,4 +362,57 @@
         Next
 
     End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        '----------------------------------------------------------------------
+        'DESCRIPTION:    DESC
+        '                
+        '                
+        '                
+        '                
+        '----------------------------------------------------------------------
+        Close()
+    End Sub
+
+    Private Sub lstCountries_Click(sender As Object, e As EventArgs) Handles lstCountries.Click
+        '----------------------------------------------------------------------
+        'DESCRIPTION:    DESC
+        '                
+        '                
+        '                
+        '                
+        '----------------------------------------------------------------------
+        Select Case lstCountries.SelectedItem.ToString()
+            Case "Philippines"
+                radCity1.Text = strCitiesFromPhilippines(0, 1)
+                radCity2.Text = strCitiesFromPhilippines(1, 1)
+                radCity3.Text = strCitiesFromPhilippines(2, 1)
+                radCity4.Text = strCitiesFromPhilippines(3, 1)
+            Case "United Kingdom"
+                radCity1.Text = strCitiesFromUK(0, 1)
+                radCity2.Text = strCitiesFromUK(1, 1)
+                radCity3.Text = strCitiesFromUK(2, 1)
+                radCity4.Text = strCitiesFromUK(3, 1)
+            Case "Russia"
+                radCity1.Text = strCitiesFromRussia(0, 1)
+                radCity2.Text = strCitiesFromRussia(1, 1)
+                radCity3.Text = strCitiesFromRussia(2, 1)
+                radCity4.Text = strCitiesFromRussia(3, 1)
+            Case "United States"
+                radCity1.Text = strCitiesFromUSA(0, 1)
+                radCity2.Text = strCitiesFromUSA(1, 1)
+                radCity3.Text = strCitiesFromUSA(2, 1)
+                radCity4.Text = strCitiesFromUSA(3, 1)
+        End Select
+    End Sub
+
+    Private Function fCityData() As String
+        '----------------------------------------------------------------------
+        'DESCRIPTION:    Selecting a radCity will run this function
+        '                Needs a return
+        '                
+        '                
+        '                
+        '----------------------------------------------------------------------
+    End Function
 End Class
