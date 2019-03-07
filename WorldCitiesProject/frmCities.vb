@@ -351,7 +351,8 @@ Public Class frmCities
 
     End Sub
 
-    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+    Private Sub btnExit_Click(sender As Object,
+                              e As EventArgs) Handles btnExit.Click
         '----------------------------------------------------------------------
         'DESCRIPTION:    DESC
         '                
@@ -362,7 +363,8 @@ Public Class frmCities
         Close()
     End Sub
 
-    Private Sub lstCountries_Click(sender As Object, e As EventArgs) Handles lstCountries.Click
+    Private Sub lstCountries_Click(sender As Object,
+                                   e As EventArgs) Handles lstCountries.Click
         '----------------------------------------------------------------------
         'DESCRIPTION:    DESC
         '                
@@ -371,21 +373,76 @@ Public Class frmCities
         '                
         '----------------------------------------------------------------------
         Select Case lstCountries.SelectedItem.ToString()
+            Case "Argentina"
+                radCity1.Text = strCitiesFromArgentina(0, 1)
+                radCity2.Text = strCitiesFromArgentina(1, 1)
+                radCity3.Text = strCitiesFromArgentina(2, 1)
+                radCity4.Text = strCitiesFromArgentina(3, 1)
+            Case "Bengladesh"
+                radCity1.Text = strCitiesFromBangladesh(0, 1)
+                radCity2.Text = strCitiesFromBangladesh(1, 1)
+                radCity3.Text = strCitiesFromBangladesh(2, 1)
+                radCity4.Text = strCitiesFromBangladesh(3, 1)
+            Case "Brazil"
+                radCity1.Text = strCitiesFromBrazil(0, 1)
+                radCity2.Text = strCitiesFromBrazil(1, 1)
+                radCity3.Text = strCitiesFromBrazil(2, 1)
+                radCity4.Text = strCitiesFromBrazil(3, 1)
+            Case "Canada"
+                radCity1.Text = strCitiesFromCanada(0, 1)
+                radCity2.Text = strCitiesFromCanada(1, 1)
+                radCity3.Text = strCitiesFromCanada(2, 1)
+                radCity4.Text = strCitiesFromCanada(3, 1)
+            Case "China"
+                radCity1.Text = strCitiesFromChina(0, 1)
+                radCity2.Text = strCitiesFromChina(1, 1)
+                radCity3.Text = strCitiesFromChina(2, 1)
+                radCity4.Text = strCitiesFromChina(3, 1)
+            Case "India"
+                radCity1.Text = strCitiesFromIndia(0, 1)
+                radCity2.Text = strCitiesFromIndia(1, 1)
+                radCity3.Text = strCitiesFromIndia(2, 1)
+                radCity4.Text = strCitiesFromIndia(3, 1)
+            Case "Indonesia"
+                radCity1.Text = strCitiesFromIndonesia(0, 1)
+                radCity2.Text = strCitiesFromIndonesia(1, 1)
+                radCity3.Text = strCitiesFromIndonesia(2, 1)
+                radCity4.Text = strCitiesFromIndonesia(3, 1)
+            Case "Japan"
+                radCity1.Text = strCitiesFromJapan(0, 1)
+                radCity2.Text = strCitiesFromJapan(1, 1)
+                radCity3.Text = strCitiesFromJapan(2, 1)
+                radCity4.Text = strCitiesFromJapan(3, 1)
+            Case "Mexico"
+                radCity1.Text = strCitiesFromMexico(0, 1)
+                radCity2.Text = strCitiesFromMexico(1, 1)
+                radCity3.Text = strCitiesFromMexico(2, 1)
+                radCity4.Text = strCitiesFromMexico(3, 1)
+            Case "Nigeria"
+                radCity1.Text = strCitiesFromNigeria(0, 1)
+                radCity2.Text = strCitiesFromNigeria(1, 1)
+                radCity3.Text = strCitiesFromNigeria(2, 1)
+                radCity4.Text = strCitiesFromNigeria(3, 1)
+            Case "Pakistan"
+                radCity1.Text = strCitiesFromPakistan(0, 1)
+                radCity2.Text = strCitiesFromPakistan(1, 1)
+                radCity3.Text = strCitiesFromPakistan(2, 1)
+                radCity4.Text = strCitiesFromPakistan(3, 1)
             Case "Philippines"
                 radCity1.Text = strCitiesFromPhilippines(0, 1)
                 radCity2.Text = strCitiesFromPhilippines(1, 1)
                 radCity3.Text = strCitiesFromPhilippines(2, 1)
                 radCity4.Text = strCitiesFromPhilippines(3, 1)
-            Case "United Kingdom"
-                radCity1.Text = strCitiesFromUK(0, 1)
-                radCity2.Text = strCitiesFromUK(1, 1)
-                radCity3.Text = strCitiesFromUK(2, 1)
-                radCity4.Text = strCitiesFromUK(3, 1)
             Case "Russia"
                 radCity1.Text = strCitiesFromRussia(0, 1)
                 radCity2.Text = strCitiesFromRussia(1, 1)
                 radCity3.Text = strCitiesFromRussia(2, 1)
                 radCity4.Text = strCitiesFromRussia(3, 1)
+            Case "United Kingdom"
+                radCity1.Text = strCitiesFromUK(0, 1)
+                radCity2.Text = strCitiesFromUK(1, 1)
+                radCity3.Text = strCitiesFromUK(2, 1)
+                radCity4.Text = strCitiesFromUK(3, 1)
             Case "United States"
                 radCity1.Text = strCitiesFromUSA(0, 1)
                 radCity2.Text = strCitiesFromUSA(1, 1)
@@ -398,7 +455,7 @@ Public Class frmCities
         '----------------------------------------------------------------------
         'DESCRIPTION:    Selecting a radCity will run this function
         '                Needs a return
-        '                
+        'CALLED BY:      
         '                
         '                
         '----------------------------------------------------------------------
