@@ -471,7 +471,7 @@ Public Class frmCities
         '----------------------------------------------------------------------
         'DESCRIPTION:    Selecting a radCity will run this function
         '                Needs a return
-        '                
+        'CALLED BY:      
         '                
         '                
         '----------------------------------------------------------------------
