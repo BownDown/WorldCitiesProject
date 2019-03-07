@@ -130,9 +130,9 @@ Partial Class frmCities
         Me.lblDesignedby.AutoSize = True
         Me.lblDesignedby.Location = New System.Drawing.Point(10, 526)
         Me.lblDesignedby.Name = "lblDesignedby"
-        Me.lblDesignedby.Size = New System.Drawing.Size(277, 13)
+        Me.lblDesignedby.Size = New System.Drawing.Size(343, 13)
         Me.lblDesignedby.TabIndex = 6
-        Me.lblDesignedby.Text = "Louie Escalera,Linda Lim,Elizabeth Robinson,Neil Wiborg"
+        Me.lblDesignedby.Text = "Created by: Louie Escalera, Linda Lim, Elizabeth Robinson, Neil Wiborg"
         '
         'btnRest
         '
@@ -171,9 +171,9 @@ Partial Class frmCities
         Me.chkUnderline.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chkUnderline.Location = New System.Drawing.Point(580, 426)
         Me.chkUnderline.Name = "chkUnderline"
-        Me.chkUnderline.Size = New System.Drawing.Size(65, 17)
+        Me.chkUnderline.Size = New System.Drawing.Size(71, 17)
         Me.chkUnderline.TabIndex = 10
-        Me.chkUnderline.Text = "Undrline"
+        Me.chkUnderline.Text = "Underline"
         Me.chkUnderline.UseVisualStyleBackColor = True
         '
         'frmCities
