@@ -32,7 +32,7 @@ Partial Class frmCities
         Me.radCity1 = New System.Windows.Forms.RadioButton()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.lblDesignedby = New System.Windows.Forms.Label()
-        Me.btnRest = New System.Windows.Forms.Button()
+        Me.btnReset = New System.Windows.Forms.Button()
         Me.chkItalic = New System.Windows.Forms.CheckBox()
         Me.chkBold = New System.Windows.Forms.CheckBox()
         Me.chkUnderline = New System.Windows.Forms.CheckBox()
@@ -134,14 +134,14 @@ Partial Class frmCities
         Me.lblDesignedby.TabIndex = 6
         Me.lblDesignedby.Text = "Created by: Louie Escalera, Linda Lim, Elizabeth Robinson, Neil Wiborg"
         '
-        'btnRest
+        'btnReset
         '
-        Me.btnRest.Location = New System.Drawing.Point(701, 500)
-        Me.btnRest.Name = "btnRest"
-        Me.btnRest.Size = New System.Drawing.Size(75, 23)
-        Me.btnRest.TabIndex = 7
-        Me.btnRest.Text = "Reset"
-        Me.btnRest.UseVisualStyleBackColor = True
+        Me.btnReset.Location = New System.Drawing.Point(701, 500)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(75, 23)
+        Me.btnReset.TabIndex = 7
+        Me.btnReset.Text = "Reset"
+        Me.btnReset.UseVisualStyleBackColor = True
         '
         'chkItalic
         '
@@ -183,7 +183,7 @@ Partial Class frmCities
         Me.Controls.Add(Me.chkUnderline)
         Me.Controls.Add(Me.chkBold)
         Me.Controls.Add(Me.chkItalic)
-        Me.Controls.Add(Me.btnRest)
+        Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.lblDesignedby)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.pnlCities)
@@ -209,7 +209,7 @@ Partial Class frmCities
     Friend WithEvents radCity3 As RadioButton
     Friend WithEvents radCity2 As RadioButton
     Friend WithEvents radCity1 As RadioButton
-    Friend WithEvents btnRest As Button
+    Friend WithEvents btnReset As Button
     Friend WithEvents chkItalic As CheckBox
     Friend WithEvents chkBold As CheckBox
     Friend WithEvents chkUnderline As CheckBox
