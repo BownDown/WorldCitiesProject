@@ -89,7 +89,6 @@ Public Class frmCities
             Select Case strCountryName
 
                 Case "Philippines"
-
                     strCitiesFromPhilippines(intPhilippinesCountArray, 0) = CStr(inttempFileLines)
                     strCitiesFromPhilippines(intPhilippinesCountArray, 1) = strtempCityName
                     strCitiesFromPhilippines(intPhilippinesCountArray, 2) = strCountryName
@@ -105,7 +104,6 @@ Public Class frmCities
                     LineInput(1)
                     strCitiesFromPhilippines(intPhilippinesCountArray, 5) = LineInput(1)
                     intPhilippinesCountArray += 1
-                    FileClose(1)
 
                 Case "Russia"
 
@@ -123,7 +121,6 @@ Public Class frmCities
                     LineInput(1)
                     strCitiesFromRussia(intRussiaCountArray, 5) = LineInput(1)
                     intRussiaCountArray += 1
-                    FileClose(1)
 
                 Case "United Kingdom"
 
@@ -141,15 +138,9 @@ Public Class frmCities
                     LineInput(1)
                     strCitiesFromUK(intUKCountArray, 5) = LineInput(1)
                     intUKCountArray += 1
-                    FileClose(1)
 
                 Case "United States"
 
-                    FileOpen(1, sFile, OpenMode.Input)
-                    LineInput(1)
-                    LineInput(1)
-                    LineInput(1)
-                    LineInput(1)
                     strCitiesFromUSA(intUSACountArray, 0) = CStr(inttempFileLines)
                     strCitiesFromUSA(intUSACountArray, 1) = strtempCityName
                     strCitiesFromUSA(intUSACountArray, 2) = strCountryName
@@ -164,7 +155,6 @@ Public Class frmCities
                     LineInput(1)
                     strCitiesFromUSA(intUSACountArray, 5) = LineInput(1)
                     intUKCountArray += 1
-                    FileClose(1)
 
                 Case "Argentina"
                     strCitiesFromArgentina(intArgentinaCountArray, 0) = CStr(inttempFileLines)
@@ -181,7 +171,6 @@ Public Class frmCities
                     LineInput(1)
                     strCitiesFromArgentina(intArgentinaCountArray, 5) = LineInput(1)
                     intArgentinaCountArray += 1
-                    FileClose(1)
 
                 Case "Bangladesh"
 
@@ -199,7 +188,7 @@ Public Class frmCities
                     LineInput(1)
                     strCitiesFromBangladesh(intBangladeshCountArray, 5) = LineInput(1)
                     intBangladeshCountArray += 1
-                    FileClose(1)
+
 
                 Case "Brazil"
 
@@ -218,7 +207,7 @@ Public Class frmCities
                     LineInput(1)
                     strCitiesFromBrazil(intBrazilCountArray, 5) = LineInput(1)
                     intBrazilCountArray += 1
-                    FileClose(1)
+
 
                 Case "Canada"
 
@@ -236,7 +225,6 @@ Public Class frmCities
                     LineInput(1)
                     strCitiesFromCanada(intCanadaCountArray, 5) = LineInput(1)
                     intCanadaCountArray += 1
-                    FileClose(1)
 
                 Case "China"
 
@@ -254,7 +242,6 @@ Public Class frmCities
                     LineInput(1)
                     strCitiesFromChina(intChinaCountArray, 5) = LineInput(1)
                     intChinaCountArray += 1
-                    FileClose(1)
 
                 Case "India"
 
@@ -272,7 +259,6 @@ Public Class frmCities
                     LineInput(1)
                     strCitiesFromIndia(intIndiaCountArray, 5) = LineInput(1)
                     intIndiaCountArray += 1
-                    FileClose(1)
 
 
                 Case "Indonesia"
@@ -291,7 +277,6 @@ Public Class frmCities
                     LineInput(1)
                     strCitiesFromIndonesia(intIndonesiaCountArray, 5) = LineInput(1)
                     intIndonesiaCountArray += 1
-                    FileClose(1)
 
                 Case "Japan"
 
@@ -309,7 +294,6 @@ Public Class frmCities
                     LineInput(1)
                     strCitiesFromJapan(intJapanCountArray, 5) = LineInput(1)
                     intJapanCountArray += 1
-                    FileClose(1)
 
                 Case "Mexico"
                     strCitiesFromMexico(intMexicoCountArray, 0) = CStr(inttempFileLines)
@@ -326,7 +310,6 @@ Public Class frmCities
                     LineInput(1)
                     strCitiesFromMexico(intMexicoCountArray, 5) = LineInput(1)
                     intMexicoCountArray += 1
-                    FileClose(1)
 
                 Case "Nigeria"
                     strCitiesFromNigeria(intNigeriaCountArray, 0) = CStr(inttempFileLines)
@@ -343,7 +326,6 @@ Public Class frmCities
                     LineInput(1)
                     strCitiesFromNigeria(intNigeriaCountArray, 5) = LineInput(1)
                     intNigeriaCountArray += 1
-                    FileClose(1)
                 Case "Pakistan"
                     strCitiesFromPakistan(intPakistanCountArray, 0) = CStr(inttempFileLines)
                     strCitiesFromPakistan(intPakistanCountArray, 1) = strtempCityName
@@ -359,9 +341,11 @@ Public Class frmCities
                     LineInput(1)
                     strCitiesFromPakistan(intPakistanCountArray, 5) = LineInput(1)
                     intPakistanCountArray += 1
-                    FileClose(1)
+
 
             End Select
+            FileClose(1)
+
 
         Next
 
