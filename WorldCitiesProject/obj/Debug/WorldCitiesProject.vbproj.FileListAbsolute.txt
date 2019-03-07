@@ -22,3 +22,15 @@ C:\Users\955348374\source\repos\WorldCitiesProject\WorldCitiesProject\obj\Debug\
 C:\Users\955348374\source\repos\WorldCitiesProject\WorldCitiesProject\obj\Debug\WorldCitiesProject.exe
 C:\Users\955348374\source\repos\WorldCitiesProject\WorldCitiesProject\obj\Debug\WorldCitiesProject.xml
 C:\Users\955348374\source\repos\WorldCitiesProject\WorldCitiesProject\obj\Debug\WorldCitiesProject.pdb
+C:\Users\Neil Wiborg\Source\Repos\BownDown\WorldCitiesProject\WorldCitiesProject\bin\Debug\WorldCitiesProject.exe.config
+C:\Users\Neil Wiborg\Source\Repos\BownDown\WorldCitiesProject\WorldCitiesProject\bin\Debug\WorldCitiesProject.exe
+C:\Users\Neil Wiborg\Source\Repos\BownDown\WorldCitiesProject\WorldCitiesProject\bin\Debug\WorldCitiesProject.pdb
+C:\Users\Neil Wiborg\Source\Repos\BownDown\WorldCitiesProject\WorldCitiesProject\bin\Debug\WorldCitiesProject.xml
+C:\Users\Neil Wiborg\Source\Repos\BownDown\WorldCitiesProject\WorldCitiesProject\obj\Debug\WorldCitiesProject.vbprojAssemblyReference.cache
+C:\Users\Neil Wiborg\Source\Repos\BownDown\WorldCitiesProject\WorldCitiesProject\obj\Debug\WorldCitiesProject.frmCities.resources
+C:\Users\Neil Wiborg\Source\Repos\BownDown\WorldCitiesProject\WorldCitiesProject\obj\Debug\WorldCitiesProject.Resources.resources
+C:\Users\Neil Wiborg\Source\Repos\BownDown\WorldCitiesProject\WorldCitiesProject\obj\Debug\WorldCitiesProject.vbproj.GenerateResource.cache
+C:\Users\Neil Wiborg\Source\Repos\BownDown\WorldCitiesProject\WorldCitiesProject\obj\Debug\WorldCitiesProject.vbproj.CoreCompileInputs.cache
+C:\Users\Neil Wiborg\Source\Repos\BownDown\WorldCitiesProject\WorldCitiesProject\obj\Debug\WorldCitiesProject.exe
+C:\Users\Neil Wiborg\Source\Repos\BownDown\WorldCitiesProject\WorldCitiesProject\obj\Debug\WorldCitiesProject.xml
+C:\Users\Neil Wiborg\Source\Repos\BownDown\WorldCitiesProject\WorldCitiesProject\obj\Debug\WorldCitiesProject.pdb

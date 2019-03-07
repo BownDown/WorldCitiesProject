@@ -1,4 +1,22 @@
-﻿Public Class frmCities
+﻿'==============================================================================
+'Project:         World Cities Project
+'Title:           World Cities
+'File Name:       
+'Date Completed:  
+'
+'Authors:         Louie Escalera, Linda Lim, Elizabeth Robinson, Neil Wiborg
+'Class:           CS 115 Section C
+'
+'Description:     
+'                 
+'                 
+'                 
+'                 
+'                 
+'==============================================================================
+Option Explicit On
+Option Strict On
+Public Class frmCities
 
 
     ''strCountryArray(i,p) i = hold the country placement
@@ -30,6 +48,13 @@
 
     Private Sub frmCities_Load(sender As Object,
                                e As EventArgs) Handles MyBase.Load
+        '----------------------------------------------------------------------
+        'DESCRIPTION:    DESC
+        '                
+        '                
+        '                
+        '                
+        '----------------------------------------------------------------------
         ''Get files with file extension .wcf from data folder
         Dim fileCities As String() = System.IO.Directory.GetFiles("../Data",
                                                                   "*.wcf")
@@ -79,7 +104,6 @@
                     LineInput(1)
                     strCitiesFromPhilippines(intPhilippinesCountArray, 5) = LineInput(1)
                     intPhilippinesCountArray += 1
-                    FileClose(1)
 
                 Case "Russia"
 
@@ -97,7 +121,6 @@
                     LineInput(1)
                     strCitiesFromRussia(intRussiaCountArray, 5) = LineInput(1)
                     intRussiaCountArray += 1
-                    FileClose(1)
 
                 Case "United Kingdom"
 
@@ -115,15 +138,9 @@
                     LineInput(1)
                     strCitiesFromUK(intUKCountArray, 5) = LineInput(1)
                     intUKCountArray += 1
-                    FileClose(1)
 
                 Case "United States"
 
-                    FileOpen(1, sFile, OpenMode.Input)
-                    LineInput(1)
-                    LineInput(1)
-                    LineInput(1)
-                    LineInput(1)
                     strCitiesFromUSA(intUSACountArray, 0) = CStr(inttempFileLines)
                     strCitiesFromUSA(intUSACountArray, 1) = strtempCityName
                     strCitiesFromUSA(intUSACountArray, 2) = strCountryName
@@ -138,7 +155,6 @@
                     LineInput(1)
                     strCitiesFromUSA(intUSACountArray, 5) = LineInput(1)
                     intUKCountArray += 1
-                    FileClose(1)
 
                 Case "Argentina"
                     strCitiesFromArgentina(intArgentinaCountArray, 0) = CStr(inttempFileLines)
@@ -155,7 +171,6 @@
                     LineInput(1)
                     strCitiesFromArgentina(intArgentinaCountArray, 5) = LineInput(1)
                     intArgentinaCountArray += 1
-                    FileClose(1)
 
                 Case "Bangladesh"
 
@@ -173,7 +188,7 @@
                     LineInput(1)
                     strCitiesFromBangladesh(intBangladeshCountArray, 5) = LineInput(1)
                     intBangladeshCountArray += 1
-                    FileClose(1)
+
 
                 Case "Brazil"
 
@@ -192,7 +207,7 @@
                     LineInput(1)
                     strCitiesFromBrazil(intBrazilCountArray, 5) = LineInput(1)
                     intBrazilCountArray += 1
-                    FileClose(1)
+
 
                 Case "Canada"
 
@@ -210,7 +225,6 @@
                     LineInput(1)
                     strCitiesFromCanada(intCanadaCountArray, 5) = LineInput(1)
                     intCanadaCountArray += 1
-                    FileClose(1)
 
                 Case "China"
 
@@ -228,7 +242,6 @@
                     LineInput(1)
                     strCitiesFromChina(intChinaCountArray, 5) = LineInput(1)
                     intChinaCountArray += 1
-                    FileClose(1)
 
                 Case "India"
 
@@ -246,7 +259,6 @@
                     LineInput(1)
                     strCitiesFromIndia(intIndiaCountArray, 5) = LineInput(1)
                     intIndiaCountArray += 1
-                    FileClose(1)
 
 
                 Case "Indonesia"
@@ -265,7 +277,6 @@
                     LineInput(1)
                     strCitiesFromIndonesia(intIndonesiaCountArray, 5) = LineInput(1)
                     intIndonesiaCountArray += 1
-                    FileClose(1)
 
                 Case "Japan"
 
@@ -283,7 +294,6 @@
                     LineInput(1)
                     strCitiesFromJapan(intJapanCountArray, 5) = LineInput(1)
                     intJapanCountArray += 1
-                    FileClose(1)
 
                 Case "Mexico"
                     strCitiesFromMexico(intMexicoCountArray, 0) = CStr(inttempFileLines)
@@ -300,7 +310,6 @@
                     LineInput(1)
                     strCitiesFromMexico(intMexicoCountArray, 5) = LineInput(1)
                     intMexicoCountArray += 1
-                    FileClose(1)
 
                 Case "Nigeria"
                     strCitiesFromNigeria(intNigeriaCountArray, 0) = CStr(inttempFileLines)
@@ -317,7 +326,6 @@
                     LineInput(1)
                     strCitiesFromNigeria(intNigeriaCountArray, 5) = LineInput(1)
                     intNigeriaCountArray += 1
-                    FileClose(1)
                 Case "Pakistan"
                     strCitiesFromPakistan(intPakistanCountArray, 0) = CStr(inttempFileLines)
                     strCitiesFromPakistan(intPakistanCountArray, 1) = strtempCityName
@@ -333,12 +341,66 @@
                     LineInput(1)
                     strCitiesFromPakistan(intPakistanCountArray, 5) = LineInput(1)
                     intPakistanCountArray += 1
-                    FileClose(1)
 
 
             End Select
+            FileClose(1)
+
 
         Next
 
     End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        '----------------------------------------------------------------------
+        'DESCRIPTION:    DESC
+        '                
+        '                
+        '                
+        '                
+        '----------------------------------------------------------------------
+        Close()
+    End Sub
+
+    Private Sub lstCountries_Click(sender As Object, e As EventArgs) Handles lstCountries.Click
+        '----------------------------------------------------------------------
+        'DESCRIPTION:    DESC
+        '                
+        '                
+        '                
+        '                
+        '----------------------------------------------------------------------
+        Select Case lstCountries.SelectedItem.ToString()
+            Case "Philippines"
+                radCity1.Text = strCitiesFromPhilippines(0, 1)
+                radCity2.Text = strCitiesFromPhilippines(1, 1)
+                radCity3.Text = strCitiesFromPhilippines(2, 1)
+                radCity4.Text = strCitiesFromPhilippines(3, 1)
+            Case "United Kingdom"
+                radCity1.Text = strCitiesFromUK(0, 1)
+                radCity2.Text = strCitiesFromUK(1, 1)
+                radCity3.Text = strCitiesFromUK(2, 1)
+                radCity4.Text = strCitiesFromUK(3, 1)
+            Case "Russia"
+                radCity1.Text = strCitiesFromRussia(0, 1)
+                radCity2.Text = strCitiesFromRussia(1, 1)
+                radCity3.Text = strCitiesFromRussia(2, 1)
+                radCity4.Text = strCitiesFromRussia(3, 1)
+            Case "United States"
+                radCity1.Text = strCitiesFromUSA(0, 1)
+                radCity2.Text = strCitiesFromUSA(1, 1)
+                radCity3.Text = strCitiesFromUSA(2, 1)
+                radCity4.Text = strCitiesFromUSA(3, 1)
+        End Select
+    End Sub
+
+    Private Function fCityData() As String
+        '----------------------------------------------------------------------
+        'DESCRIPTION:    Selecting a radCity will run this function
+        '                Needs a return
+        '                
+        '                
+        '                
+        '----------------------------------------------------------------------
+    End Function
 End Class
