@@ -459,5 +459,7 @@ Public Class frmCities
         '                
         '                
         '----------------------------------------------------------------------
+        Dim strtemp As String = ""
+        Return strtemp
     End Function
 End Class
