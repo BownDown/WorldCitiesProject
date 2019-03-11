@@ -448,10 +448,15 @@ Public Class frmCities
                 radCity2.Text = strCitiesFromUSA(1, 1)
                 radCity3.Text = strCitiesFromUSA(2, 1)
                 radCity4.Text = strCitiesFromUSA(3, 1)
+            Case Else
+                radCity1.Text = ""
+                radCity2.Text = ""
+                radCity3.Text = ""
+                radCity4.Text = ""
         End Select
     End Sub
 
-    Private Function fCityData() As String
+    Private Function fCityData(ByVal strCityName As String) As String
         '----------------------------------------------------------------------
         'DESCRIPTION:    Selecting a radCity will run this function
         '                Needs a return
@@ -459,6 +464,10 @@ Public Class frmCities
         '                
         '                
         '----------------------------------------------------------------------
+        'strCityname
+        ''cse country
+        'do 
+        ''if
         Dim strtemp As String = ""
         Return strtemp
     End Function
