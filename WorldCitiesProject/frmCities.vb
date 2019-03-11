@@ -29,21 +29,21 @@ Public Class frmCities
     ''strCountry(i,5) holds Image Name
     ''strCountry(i,6+) hold description
 
-    Dim strCitiesFromArgentina(4, 120) As String
-    Dim strCitiesFromBangladesh(4, 120) As String
-    Dim strCitiesFromBrazil(4, 120) As String
-    Dim strCitiesFromCanada(4, 120) As String
-    Dim strCitiesFromChina(4, 120) As String
-    Dim strCitiesFromIndia(4, 120) As String
-    Dim strCitiesFromIndonesia(4, 120) As String
-    Dim strCitiesFromJapan(4, 120) As String
-    Dim strCitiesFromMexico(4, 120) As String
-    Dim strCitiesFromNigeria(4, 120) As String
-    Dim strCitiesFromPakistan(4, 120) As String
-    Dim strCitiesFromPhilippines(4, 120) As String
-    Dim strCitiesFromRussia(4, 120) As String
-    Dim strCitiesFromUK(4, 120) As String
-    Dim strCitiesFromUSA(4, 120) As String
+    Dim strCitiesFromArgentina(10, 120) As String
+    Dim strCitiesFromBangladesh(10, 120) As String
+    Dim strCitiesFromBrazil(10, 120) As String
+    Dim strCitiesFromCanada(10, 120) As String
+    Dim strCitiesFromChina(10, 120) As String
+    Dim strCitiesFromIndia(10, 120) As String
+    Dim strCitiesFromIndonesia(10, 120) As String
+    Dim strCitiesFromJapan(10, 120) As String
+    Dim strCitiesFromMexico(10, 120) As String
+    Dim strCitiesFromNigeria(10, 120) As String
+    Dim strCitiesFromPakistan(10, 120) As String
+    Dim strCitiesFromPhilippines(10, 120) As String
+    Dim strCitiesFromRussia(10, 120) As String
+    Dim strCitiesFromUK(10, 120) As String
+    Dim strCitiesFromUSA(10, 120) As String
 
 
     Private Sub frmCities_Load(sender As Object,
@@ -154,7 +154,7 @@ Public Class frmCities
                     Next i
                     LineInput(1)
                     strCitiesFromUSA(intUSACountArray, 5) = LineInput(1)
-                    intUKCountArray += 1
+                    intUSACountArray += 1
 
                 Case "Argentina"
                     strCitiesFromArgentina(intArgentinaCountArray, 0) = CStr(inttempFileLines)
