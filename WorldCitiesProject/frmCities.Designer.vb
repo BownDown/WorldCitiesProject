@@ -36,6 +36,12 @@ Partial Class frmCities
         Me.radCity3 = New System.Windows.Forms.RadioButton()
         Me.radCity4 = New System.Windows.Forms.RadioButton()
         Me.pnlCities = New System.Windows.Forms.Panel()
+        Me.radCity5 = New System.Windows.Forms.RadioButton()
+        Me.radCity6 = New System.Windows.Forms.RadioButton()
+        Me.radCity7 = New System.Windows.Forms.RadioButton()
+        Me.radCity8 = New System.Windows.Forms.RadioButton()
+        Me.radCity9 = New System.Windows.Forms.RadioButton()
+        Me.radCity10 = New System.Windows.Forms.RadioButton()
         CType(Me.picCities, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlCities.SuspendLayout()
         Me.SuspendLayout()
@@ -167,6 +173,12 @@ Partial Class frmCities
         '
         'pnlCities
         '
+        Me.pnlCities.Controls.Add(Me.radCity10)
+        Me.pnlCities.Controls.Add(Me.radCity9)
+        Me.pnlCities.Controls.Add(Me.radCity8)
+        Me.pnlCities.Controls.Add(Me.radCity7)
+        Me.pnlCities.Controls.Add(Me.radCity6)
+        Me.pnlCities.Controls.Add(Me.radCity5)
         Me.pnlCities.Controls.Add(Me.radCity4)
         Me.pnlCities.Controls.Add(Me.radCity3)
         Me.pnlCities.Controls.Add(Me.radCity2)
@@ -175,6 +187,66 @@ Partial Class frmCities
         Me.pnlCities.Name = "pnlCities"
         Me.pnlCities.Size = New System.Drawing.Size(200, 247)
         Me.pnlCities.TabIndex = 3
+        '
+        'radCity5
+        '
+        Me.radCity5.Location = New System.Drawing.Point(4, 111)
+        Me.radCity5.Name = "radCity5"
+        Me.radCity5.Size = New System.Drawing.Size(192, 24)
+        Me.radCity5.TabIndex = 4
+        Me.radCity5.TabStop = True
+        Me.radCity5.Text = "City5"
+        Me.radCity5.UseVisualStyleBackColor = True
+        '
+        'radCity6
+        '
+        Me.radCity6.Location = New System.Drawing.Point(0, 124)
+        Me.radCity6.Name = "radCity6"
+        Me.radCity6.Size = New System.Drawing.Size(192, 24)
+        Me.radCity6.TabIndex = 5
+        Me.radCity6.TabStop = True
+        Me.radCity6.Text = "City6"
+        Me.radCity6.UseVisualStyleBackColor = True
+        '
+        'radCity7
+        '
+        Me.radCity7.Location = New System.Drawing.Point(3, 154)
+        Me.radCity7.Name = "radCity7"
+        Me.radCity7.Size = New System.Drawing.Size(192, 24)
+        Me.radCity7.TabIndex = 6
+        Me.radCity7.TabStop = True
+        Me.radCity7.Text = "City7"
+        Me.radCity7.UseVisualStyleBackColor = True
+        '
+        'radCity8
+        '
+        Me.radCity8.Location = New System.Drawing.Point(3, 184)
+        Me.radCity8.Name = "radCity8"
+        Me.radCity8.Size = New System.Drawing.Size(192, 24)
+        Me.radCity8.TabIndex = 7
+        Me.radCity8.TabStop = True
+        Me.radCity8.Text = "City8"
+        Me.radCity8.UseVisualStyleBackColor = True
+        '
+        'radCity9
+        '
+        Me.radCity9.Location = New System.Drawing.Point(0, 203)
+        Me.radCity9.Name = "radCity9"
+        Me.radCity9.Size = New System.Drawing.Size(192, 24)
+        Me.radCity9.TabIndex = 8
+        Me.radCity9.TabStop = True
+        Me.radCity9.Text = "City9"
+        Me.radCity9.UseVisualStyleBackColor = True
+        '
+        'radCity10
+        '
+        Me.radCity10.Location = New System.Drawing.Point(68, 203)
+        Me.radCity10.Name = "radCity10"
+        Me.radCity10.Size = New System.Drawing.Size(192, 24)
+        Me.radCity10.TabIndex = 9
+        Me.radCity10.TabStop = True
+        Me.radCity10.Text = "City10"
+        Me.radCity10.UseVisualStyleBackColor = True
         '
         'frmCities
         '
@@ -213,4 +285,10 @@ Partial Class frmCities
     Friend WithEvents radCity3 As RadioButton
     Friend WithEvents radCity4 As RadioButton
     Friend WithEvents pnlCities As Panel
+    Friend WithEvents radCity5 As RadioButton
+    Friend WithEvents radCity10 As RadioButton
+    Friend WithEvents radCity9 As RadioButton
+    Friend WithEvents radCity8 As RadioButton
+    Friend WithEvents radCity7 As RadioButton
+    Friend WithEvents radCity6 As RadioButton
 End Class
