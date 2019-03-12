@@ -390,81 +390,177 @@ Public Class frmCities
                 radCity2.Text = strCitiesFromArgentina(1, 1)
                 radCity3.Text = strCitiesFromArgentina(2, 1)
                 radCity4.Text = strCitiesFromArgentina(3, 1)
+                radCity5.Text = strCitiesFromArgentina(4, 1)
+                radCity6.Text = strCitiesFromArgentina(5, 1)
+                radCity7.Text = strCitiesFromArgentina(6, 1)
+                radCity8.Text = ""
+                radCity9.Text = ""
+                radCity10.Text = ""
             Case "Bengladesh"
-                radCity1.Text = strCitiesFromBangladesh(0, 1)
-                radCity2.Text = strCitiesFromBangladesh(1, 1)
-                radCity3.Text = strCitiesFromBangladesh(2, 1)
-                radCity4.Text = strCitiesFromBangladesh(3, 1)
+                radCity1.Text = ""
+                radCity2.Text = ""
+                radCity3.Text = ""
+                radCity4.Text = ""
+                radCity5.Text = ""
+                radCity6.Text = ""
+                radCity7.Text = ""
+                radCity8.Text = ""
+                radCity9.Text = ""
+                radCity10.Text = ""
             Case "Brazil"
                 radCity1.Text = strCitiesFromBrazil(0, 1)
                 radCity2.Text = strCitiesFromBrazil(1, 1)
                 radCity3.Text = strCitiesFromBrazil(2, 1)
                 radCity4.Text = strCitiesFromBrazil(3, 1)
+                radCity5.Text = strCitiesFromBrazil(4, 1)
+                radCity6.Text = strCitiesFromBrazil(5, 1)
+                radCity7.Text = strCitiesFromBrazil(6, 1)
+                radCity8.Text = ""
+                radCity9.Text = ""
+                radCity10.Text = ""
             Case "Canada"
                 radCity1.Text = strCitiesFromCanada(0, 1)
                 radCity2.Text = strCitiesFromCanada(1, 1)
                 radCity3.Text = strCitiesFromCanada(2, 1)
                 radCity4.Text = strCitiesFromCanada(3, 1)
+                radCity5.Text = strCitiesFromCanada(4, 1)
+                radCity6.Text = ""
+                radCity7.Text = ""
+                radCity8.Text = ""
+                radCity9.Text = ""
+                radCity10.Text = ""
             Case "China"
                 radCity1.Text = strCitiesFromChina(0, 1)
                 radCity2.Text = strCitiesFromChina(1, 1)
                 radCity3.Text = strCitiesFromChina(2, 1)
                 radCity4.Text = strCitiesFromChina(3, 1)
+                radCity5.Text = strCitiesFromChina(4, 1)
+                radCity6.Text = strCitiesFromChina(5, 1)
+                radCity7.Text = strCitiesFromChina(6, 1)
+                radCity8.Text = ""
+                radCity9.Text = ""
+                radCity10.Text = ""
             Case "India"
-                radCity1.Text = strCitiesFromIndia(0, 1)
-                radCity2.Text = strCitiesFromIndia(1, 1)
-                radCity3.Text = strCitiesFromIndia(2, 1)
-                radCity4.Text = strCitiesFromIndia(3, 1)
+                radCity1.Text = ""
+                radCity2.Text = ""
+                radCity3.Text = ""
+                radCity4.Text = ""
+                radCity5.Text = ""
+                radCity6.Text = ""
+                radCity7.Text = ""
+                radCity8.Text = ""
+                radCity9.Text = ""
+                radCity10.Text = ""
             Case "Indonesia"
                 radCity1.Text = strCitiesFromIndonesia(0, 1)
                 radCity2.Text = strCitiesFromIndonesia(1, 1)
                 radCity3.Text = strCitiesFromIndonesia(2, 1)
                 radCity4.Text = strCitiesFromIndonesia(3, 1)
+                radCity5.Text = strCitiesFromIndonesia(4, 1)
+                radCity6.Text = ""
+                radCity7.Text = ""
+                radCity8.Text = ""
+                radCity9.Text = ""
+                radCity10.Text = ""
             Case "Japan"
                 radCity1.Text = strCitiesFromJapan(0, 1)
                 radCity2.Text = strCitiesFromJapan(1, 1)
                 radCity3.Text = strCitiesFromJapan(2, 1)
                 radCity4.Text = strCitiesFromJapan(3, 1)
+                radCity5.Text = strCitiesFromJapan(4, 1)
+                radCity6.Text = ""
+                radCity7.Text = ""
+                radCity8.Text = ""
+                radCity9.Text = ""
+                radCity10.Text = ""
             Case "Mexico"
                 radCity1.Text = strCitiesFromMexico(0, 1)
                 radCity2.Text = strCitiesFromMexico(1, 1)
                 radCity3.Text = strCitiesFromMexico(2, 1)
                 radCity4.Text = strCitiesFromMexico(3, 1)
+                radCity5.Text = strCitiesFromMexico(4, 1)
+                radCity6.Text = strCitiesFromMexico(5, 1)
+                radCity7.Text = strCitiesFromMexico(6, 1)
+                radCity8.Text = ""
+                radCity9.Text = ""
+                radCity10.Text = ""
             Case "Nigeria"
                 radCity1.Text = strCitiesFromNigeria(0, 1)
                 radCity2.Text = strCitiesFromNigeria(1, 1)
                 radCity3.Text = strCitiesFromNigeria(2, 1)
                 radCity4.Text = strCitiesFromNigeria(3, 1)
+                radCity5.Text = strCitiesFromNigeria(4, 1)
+                radCity6.Text = ""
+                radCity7.Text = ""
+                radCity8.Text = ""
+                radCity9.Text = ""
+                radCity10.Text = ""
             Case "Pakistan"
                 radCity1.Text = strCitiesFromPakistan(0, 1)
                 radCity2.Text = strCitiesFromPakistan(1, 1)
                 radCity3.Text = strCitiesFromPakistan(2, 1)
                 radCity4.Text = strCitiesFromPakistan(3, 1)
+                radCity5.Text = strCitiesFromPakistan(4, 1)
+                radCity6.Text = ""
+                radCity7.Text = ""
+                radCity8.Text = ""
+                radCity9.Text = ""
+                radCity10.Text = ""
             Case "Philippines"
                 radCity1.Text = strCitiesFromPhilippines(0, 1)
                 radCity2.Text = strCitiesFromPhilippines(1, 1)
                 radCity3.Text = strCitiesFromPhilippines(2, 1)
                 radCity4.Text = strCitiesFromPhilippines(3, 1)
+                radCity5.Text = strCitiesFromPhilippines(4, 1)
+                radCity6.Text = ""
+                radCity7.Text = ""
+                radCity8.Text = ""
+                radCity9.Text = ""
+                radCity10.Text = ""
             Case "Russia"
                 radCity1.Text = strCitiesFromRussia(0, 1)
                 radCity2.Text = strCitiesFromRussia(1, 1)
                 radCity3.Text = strCitiesFromRussia(2, 1)
                 radCity4.Text = strCitiesFromRussia(3, 1)
+                radCity5.Text = strCitiesFromRussia(4, 1)
+                radCity6.Text = ""
+                radCity7.Text = ""
+                radCity8.Text = ""
+                radCity9.Text = ""
+                radCity10.Text = ""
             Case "United Kingdom"
                 radCity1.Text = strCitiesFromUK(0, 1)
                 radCity2.Text = strCitiesFromUK(1, 1)
                 radCity3.Text = strCitiesFromUK(2, 1)
                 radCity4.Text = strCitiesFromUK(3, 1)
+                radCity5.Text = strCitiesFromUK(4, 1)
+                radCity6.Text = strCitiesFromUK(5, 1)
+                radCity7.Text = strCitiesFromUK(6, 1)
+                radCity8.Text = strCitiesFromUK(7, 1)
+                radCity9.Text = ""
+                radCity10.Text = ""
             Case "United States"
                 radCity1.Text = strCitiesFromUSA(0, 1)
                 radCity2.Text = strCitiesFromUSA(1, 1)
                 radCity3.Text = strCitiesFromUSA(2, 1)
                 radCity4.Text = strCitiesFromUSA(3, 1)
+                radCity5.Text = strCitiesFromUSA(4, 1)
+                radCity6.Text = strCitiesFromUSA(5, 1)
+                radCity7.Text = ""
+                radCity8.Text = ""
+                radCity9.Text = ""
+                radCity10.Text = ""
             Case Else
                 radCity1.Text = ""
                 radCity2.Text = ""
                 radCity3.Text = ""
                 radCity4.Text = ""
+                radCity5.Text = ""
+                radCity6.Text = ""
+                radCity7.Text = ""
+                radCity8.Text = ""
+                radCity9.Text = ""
+                radCity10.Text = ""
         End Select
     End Sub
 
