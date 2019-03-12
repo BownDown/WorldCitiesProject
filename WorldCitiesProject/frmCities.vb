@@ -464,182 +464,226 @@ Public Class frmCities
 
     Private Sub radCity1_Click(sender As Object, e As EventArgs) Handles radCity1.Click
         '----------------------------------------------------------------------
-        'DESCRIPTION:    Selecting a radCity will run this function
-        '                Needs a return
-        'CALLS:          fCityData
+        'DESCRIPTION:    Runs when radCity1 is clicked. Sends index to CityData
+        '                sub to fill the rtbInformation with city data.
+        'CALLS:          sCityData
         '                
         '                
         '----------------------------------------------------------------------
-        fCityData(radCity1.Text, radCity1.Name)
+        sCityData(0)
     End Sub
 
     Private Sub radCity2_Click(sender As Object, e As EventArgs) Handles radCity2.Click
         '----------------------------------------------------------------------
-        'DESCRIPTION:    Selecting a radCity will run this function
-        '                Needs a return
-        'CALLS:          fCityData
+        'DESCRIPTION:    Runs when radCity2 is clicked. Sends index to CityData
+        '                sub to fill the rtbInformation with city data.
+        'CALLS:          sCityData
         '                
         '                
         '----------------------------------------------------------------------
-        fCityData(radCity2.Text, radCity2.Name)
+        sCityData(1)
     End Sub
 
     Private Sub radCity3_Click(sender As Object, e As EventArgs) Handles radCity3.Click
         '----------------------------------------------------------------------
-        'DESCRIPTION:    Selecting a radCity will run this function
-        '                Needs a return
-        'CALLS:          fCityData
+        'DESCRIPTION:    Runs when radCity3 is clicked. Sends index to CityData
+        '                sub to fill the rtbInformation with city data.
+        'CALLS:          sCityData
         '                
         '                
         '----------------------------------------------------------------------
-        fCityData(radCity3.Text, radCity3.Name)
+        sCityData(2)
     End Sub
 
     Private Sub radCity4_Click(sender As Object, e As EventArgs) Handles radCity4.Click
         '----------------------------------------------------------------------
-        'DESCRIPTION:    Selecting a radCity will run this function
-        '                Needs a return
-        'CALLS:          fCityData
+        'DESCRIPTION:    Runs when radCity4 is clicked. Sends index to CityData
+        '                sub to fill the rtbInformation with city data.
+        'CALLS:          sCityData
         '                
         '                
         '----------------------------------------------------------------------
-        fCityData(radCity4.Text, radCity4.Name)
+        sCityData(3)
     End Sub
 
-    Private Function fCityData(ByVal strCityName As String, ByVal strRadName As String) As String
+    Private Sub sCityData(ByVal intCityIndex As Integer)
         '----------------------------------------------------------------------
-        'DESCRIPTION:    Selecting a radCity will run this function
-        '                Needs a return
+        'DESCRIPTION:    Runs when a radCity radio button is clicked. Fills
+        '                rtbInformation with the current city information.
         'CALLED BY:      radCity1_Click, radCity2_Click, radCity3_Click, 
         '                radCity4_Click
         '                
         '----------------------------------------------------------------------
-        'strCityname
-        ''cse country
-        'do 
-        ''if
-        Dim intCityIndex As Integer = 0
-        Select Case strRadName
-            Case "radCity1"
-                intCityIndex = 0
-            Case "radCity2"
-                intCityIndex = 1
-            Case "radCity3"
-                intCityIndex = 2
-            Case "radCity4"
-                intCityIndex = 3
-        End Select
+        Dim i As Integer = 6
         If lstCountries.SelectedItem IsNot Nothing Then
-
+            'In case a radCity button is clicked without a country selected
             Select Case lstCountries.SelectedItem.ToString()
                 Case "Argentina"
                     rtbInformation.Text =
             "Country: " + strCitiesFromArgentina(intCityIndex, 2) + Chr(13) +
             "Population: " + strCitiesFromArgentina(intCityIndex, 3) +
             Chr(13) + "Annual Average Rainfall: " +
-            strCitiesFromArgentina(intCityIndex, 4) + Chr(13)
+            strCitiesFromArgentina(intCityIndex, 4) + Chr(13) + Chr(13)
+                    Do Until strCitiesFromArgentina(intCityIndex, i) = Nothing
+                        rtbInformation.Text += strCitiesFromArgentina(intCityIndex, i)
+                        i += 1
+                    Loop
 
                 Case "Bengladesh"
                     rtbInformation.Text =
             "Country: " + strCitiesFromBangladesh(intCityIndex, 2) + Chr(13) +
             "Population: " + strCitiesFromBangladesh(intCityIndex, 3) +
             Chr(13) + "Annual Average Rainfall: " +
-            strCitiesFromBangladesh(intCityIndex, 4) + Chr(13)
+            strCitiesFromBangladesh(intCityIndex, 4) + Chr(13) + Chr(13)
+                    Do Until strCitiesFromBangladesh(intCityIndex, i) = Nothing
+                        rtbInformation.Text += strCitiesFromBangladesh(intCityIndex, i)
+                        i += 1
+                    Loop
 
                 Case "Brazil"
                     rtbInformation.Text =
             "Country: " + strCitiesFromBrazil(intCityIndex, 2) + Chr(13) +
             "Population: " + strCitiesFromBrazil(intCityIndex, 3) +
             Chr(13) + "Annual Average Rainfall: " +
-            strCitiesFromBrazil(intCityIndex, 4) + Chr(13)
+            strCitiesFromBrazil(intCityIndex, 4) + Chr(13) + Chr(13)
+                    Do Until strCitiesFromBrazil(intCityIndex, i) = Nothing
+                        rtbInformation.Text += strCitiesFromBrazil(intCityIndex, i)
+                        i += 1
+                    Loop
 
                 Case "Canada"
                     rtbInformation.Text =
             "Country: " + strCitiesFromCanada(intCityIndex, 2) + Chr(13) +
             "Population: " + strCitiesFromCanada(intCityIndex, 3) +
             Chr(13) + "Annual Average Rainfall: " +
-            strCitiesFromCanada(intCityIndex, 4) + Chr(13)
+            strCitiesFromCanada(intCityIndex, 4) + Chr(13) + Chr(13)
+                    Do Until strCitiesFromCanada(intCityIndex, i) = Nothing
+                        rtbInformation.Text += strCitiesFromCanada(intCityIndex, i)
+                        i += 1
+                    Loop
 
                 Case "China"
                     rtbInformation.Text =
             "Country: " + strCitiesFromChina(intCityIndex, 2) + Chr(13) +
             "Population: " + strCitiesFromChina(intCityIndex, 3) +
             Chr(13) + "Annual Average Rainfall: " +
-            strCitiesFromChina(intCityIndex, 4) + Chr(13)
+            strCitiesFromChina(intCityIndex, 4) + Chr(13) + Chr(13)
+                    Do Until strCitiesFromChina(intCityIndex, i) = Nothing
+                        rtbInformation.Text += strCitiesFromChina(intCityIndex, i)
+                        i += 1
+                    Loop
 
                 Case "India"
                     rtbInformation.Text =
             "Country: " + strCitiesFromIndia(intCityIndex, 2) + Chr(13) +
             "Population: " + strCitiesFromIndia(intCityIndex, 3) +
             Chr(13) + "Annual Average Rainfall: " +
-            strCitiesFromIndia(intCityIndex, 4) + Chr(13)
+            strCitiesFromIndia(intCityIndex, 4) + Chr(13) + Chr(13)
+                    Do Until strCitiesFromIndia(intCityIndex, i) = Nothing
+                        rtbInformation.Text += strCitiesFromIndia(intCityIndex, i)
+                        i += 1
+                    Loop
 
                 Case "Indonesia"
                     rtbInformation.Text =
             "Country: " + strCitiesFromIndonesia(intCityIndex, 2) + Chr(13) +
             "Population: " + strCitiesFromIndonesia(intCityIndex, 3) +
             Chr(13) + "Annual Average Rainfall: " +
-            strCitiesFromIndonesia(intCityIndex, 4) + Chr(13)
+            strCitiesFromIndonesia(intCityIndex, 4) + Chr(13) + Chr(13)
+                    Do Until strCitiesFromIndonesia(intCityIndex, i) = Nothing
+                        rtbInformation.Text += strCitiesFromIndonesia(intCityIndex, i)
+                        i += 1
+                    Loop
 
                 Case "Japan"
                     rtbInformation.Text =
             "Country: " + strCitiesFromJapan(intCityIndex, 2) + Chr(13) +
             "Population: " + strCitiesFromJapan(intCityIndex, 3) +
             Chr(13) + "Annual Average Rainfall: " +
-            strCitiesFromJapan(intCityIndex, 4) + Chr(13)
+            strCitiesFromJapan(intCityIndex, 4) + Chr(13) + Chr(13)
+                    Do Until strCitiesFromJapan(intCityIndex, i) = Nothing
+                        rtbInformation.Text += strCitiesFromJapan(intCityIndex, i)
+                        i += 1
+                    Loop
 
                 Case "Mexico"
                     rtbInformation.Text =
             "Country: " + strCitiesFromMexico(intCityIndex, 2) + Chr(13) +
             "Population: " + strCitiesFromMexico(intCityIndex, 3) +
             Chr(13) + "Annual Average Rainfall: " +
-            strCitiesFromMexico(intCityIndex, 4) + Chr(13)
+            strCitiesFromMexico(intCityIndex, 4) + Chr(13) + Chr(13)
+                    Do Until strCitiesFromMexico(intCityIndex, i) = Nothing
+                        rtbInformation.Text += strCitiesFromMexico(intCityIndex, i)
+                        i += 1
+                    Loop
 
                 Case "Nigeria"
                     rtbInformation.Text =
             "Country: " + strCitiesFromNigeria(intCityIndex, 2) + Chr(13) +
             "Population: " + strCitiesFromNigeria(intCityIndex, 3) +
             Chr(13) + "Annual Average Rainfall: " +
-            strCitiesFromNigeria(intCityIndex, 4) + Chr(13)
+            strCitiesFromNigeria(intCityIndex, 4) + Chr(13) + Chr(13)
+                    Do Until strCitiesFromNigeria(intCityIndex, i) = Nothing
+                        rtbInformation.Text += strCitiesFromNigeria(intCityIndex, i)
+                        i += 1
+                    Loop
 
                 Case "Pakistan"
                     rtbInformation.Text =
             "Country: " + strCitiesFromPakistan(intCityIndex, 2) + Chr(13) +
             "Population: " + strCitiesFromPakistan(intCityIndex, 3) +
             Chr(13) + "Annual Average Rainfall: " +
-            strCitiesFromPakistan(intCityIndex, 4) + Chr(13)
+            strCitiesFromPakistan(intCityIndex, 4) + Chr(13) + Chr(13)
+                    Do Until strCitiesFromPakistan(intCityIndex, i) = Nothing
+                        rtbInformation.Text += strCitiesFromPakistan(intCityIndex, i)
+                        i += 1
+                    Loop
 
                 Case "Philippines"
                     rtbInformation.Text =
             "Country: " + strCitiesFromPhilippines(intCityIndex, 2) + Chr(13) +
             "Population: " + strCitiesFromPhilippines(intCityIndex, 3) +
             Chr(13) + "Annual Average Rainfall: " +
-            strCitiesFromPhilippines(intCityIndex, 4) + Chr(13)
+            strCitiesFromPhilippines(intCityIndex, 4) + Chr(13) + Chr(13)
+                    Do Until strCitiesFromPhilippines(intCityIndex, i) = Nothing
+                        rtbInformation.Text += strCitiesFromPhilippines(intCityIndex, i)
+                        i += 1
+                    Loop
 
                 Case "Russia"
                     rtbInformation.Text =
             "Country: " + strCitiesFromRussia(intCityIndex, 2) + Chr(13) +
             "Population: " + strCitiesFromRussia(intCityIndex, 3) +
             Chr(13) + "Annual Average Rainfall: " +
-            strCitiesFromRussia(intCityIndex, 4) + Chr(13)
+            strCitiesFromRussia(intCityIndex, 4) + Chr(13) + Chr(13)
+                    Do Until strCitiesFromRussia(intCityIndex, i) = Nothing
+                        rtbInformation.Text += strCitiesFromRussia(intCityIndex, i)
+                        i += 1
+                    Loop
 
                 Case "United Kingdom"
                     rtbInformation.Text =
             "Country: " + strCitiesFromUK(intCityIndex, 2) + Chr(13) +
             "Population: " + strCitiesFromUK(intCityIndex, 3) +
             Chr(13) + "Annual Average Rainfall: " +
-            strCitiesFromUK(intCityIndex, 4) + Chr(13)
+            strCitiesFromUK(intCityIndex, 4) + Chr(13) + Chr(13)
+                    Do Until strCitiesFromUK(intCityIndex, i) = Nothing
+                        rtbInformation.Text += strCitiesFromUK(intCityIndex, i)
+                        i += 1
+                    Loop
 
                 Case "United States"
                     rtbInformation.Text =
             "Country: " + strCitiesFromUSA(intCityIndex, 2) + Chr(13) +
             "Population: " + strCitiesFromUSA(intCityIndex, 3) +
             Chr(13) + "Annual Average Rainfall: " +
-            strCitiesFromUSA(intCityIndex, 4) + Chr(13)
+            strCitiesFromUSA(intCityIndex, 4) + Chr(13) + Chr(13)
+                    Do Until strCitiesFromUSA(intCityIndex, i) = Nothing
+                        rtbInformation.Text += strCitiesFromUSA(intCityIndex, i)
+                        i += 1
+                    Loop
 
             End Select
         End If
-        Dim strtemp As String = ""
-        Return strtemp
-    End Function
+    End Sub
 End Class
