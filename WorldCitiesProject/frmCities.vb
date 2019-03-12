@@ -376,6 +376,12 @@ Public Class frmCities
         radCity2.Checked = False
         radCity3.Checked = False
         radCity4.Checked = False
+        radCity5.Checked = False
+        radCity6.Checked = False
+        radCity7.Checked = False
+        radCity8.Checked = False
+        radCity9.Checked = False
+        radCity10.Checked = False
         rtbInformation.Text = ""
 
         Select Case lstCountries.SelectedItem.ToString()
@@ -504,6 +510,66 @@ Public Class frmCities
         '                
         '----------------------------------------------------------------------
         sCityData(3)
+    End Sub
+    Private Sub radCity5_Click(sender As Object, e As EventArgs) Handles radCity5.Click
+        '----------------------------------------------------------------------
+        'DESCRIPTION:    Runs when radCity5 is clicked. Sends index to CityData
+        '                sub to fill the rtbInformation with city data.
+        'CALLS:          sCityData
+        '                
+        '                
+        '----------------------------------------------------------------------
+        sCityData(4)
+    End Sub
+    Private Sub radCity6_Click(sender As Object, e As EventArgs) Handles radCity6.Click
+        '----------------------------------------------------------------------
+        'DESCRIPTION:    Runs when radCity6 is clicked. Sends index to CityData
+        '                sub to fill the rtbInformation with city data.
+        'CALLS:          sCityData
+        '                
+        '                
+        '----------------------------------------------------------------------
+        sCityData(5)
+    End Sub
+    Private Sub radCity7_Click(sender As Object, e As EventArgs) Handles radCity7.Click
+        '----------------------------------------------------------------------
+        'DESCRIPTION:    Runs when radCity7 is clicked. Sends index to CityData
+        '                sub to fill the rtbInformation with city data.
+        'CALLS:          sCityData
+        '                
+        '                
+        '----------------------------------------------------------------------
+        sCityData(6)
+    End Sub
+    Private Sub radCity8_Click(sender As Object, e As EventArgs) Handles radCity8.Click
+        '----------------------------------------------------------------------
+        'DESCRIPTION:    Runs when radCity8 is clicked. Sends index to CityData
+        '                sub to fill the rtbInformation with city data.
+        'CALLS:          sCityData
+        '                
+        '                
+        '----------------------------------------------------------------------
+        sCityData(7)
+    End Sub
+    Private Sub radCity9_Click(sender As Object, e As EventArgs) Handles radCity9.Click
+        '----------------------------------------------------------------------
+        'DESCRIPTION:    Runs when radCity9 is clicked. Sends index to CityData
+        '                sub to fill the rtbInformation with city data.
+        'CALLS:          sCityData
+        '                
+        '                
+        '----------------------------------------------------------------------
+        sCityData(8)
+    End Sub
+    Private Sub radCity10_Click(sender As Object, e As EventArgs) Handles radCity10.Click
+        '----------------------------------------------------------------------
+        'DESCRIPTION:    Runs when radCity10 is clicked. Sends index to CityData
+        '                sub to fill the rtbInformation with city data.
+        'CALLS:          sCityData
+        '                
+        '                
+        '----------------------------------------------------------------------
+        sCityData(9)
     End Sub
 
     Private Sub sCityData(ByVal intCityIndex As Integer)
